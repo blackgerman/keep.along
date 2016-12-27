@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="tg.abiguime.keepalong.main.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/main.collapsing"
+            android:layout_width="match_parent"
+            app:scrimAnimationDuration="60"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:collapsedTitleGravity="center">
+
+            <LinearLayout
+                app:layout_collapseMode="parallax"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_quotes_title"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/header_quote_textcolor"
+                    android:textSize="20sp"
+                    android:text="Daily Quote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_daily_quote"
+                android:textSize="14sp"
+                android:textColor="@color/header_quote_textcolor"
+                android:text="@string/text_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_quote_autor"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="right"
+                            android:textColor="@color/header_quote_textcolor"
+                            android:textSize="16sp"
+                            android:textStyle="italic"
+                            android:text="1994 - Henri Ford"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:title=""
+            app:title=""
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_steps_count"
+                    android:text="2330"
+                    android:layout_centerInParent="true"
+                    style="@style/footsteps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@drawable/footstep"
+                    android:contentDescription="steps"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="@dimen/footstep_hw"
+                    android:layout_height="@dimen/footstep_hw" />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

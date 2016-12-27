@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#11a6dc"
+    android:layout_margin="@dimen/divider_height"
+    android:elevation="2dp"
+    android:paddingLeft="@dimen/note_card_padding_horizontal"
+    android:paddingRight="@dimen/note_card_padding_horizontal"
+    android:paddingTop="@dimen/note_card_padding_vertical"
+    android:paddingBottom="@dimen/note_card_padding_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_mTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hello guys"
+        android:textSize="18sp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <View
+        android:layout_marginTop="@dimen/text_margin_bottom"
+        android:layout_marginBottom="@dimen/text_margin_bottom"
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+        android:layout_height="@dimen/divider_height"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Aller au marcher"
+        android:textSize="14sp"
+        android:layout_marginBottom="@dimen/text_margin_bottom"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Aller au marcher"
+        android:textSize="14sp"
+        android:layout_marginBottom="@dimen/text_margin_bottom"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Aller au marcher"
+        android:textSize="14sp"
+        android:layout_marginBottom="@dimen/text_margin_bottom"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+</LinearLayout>

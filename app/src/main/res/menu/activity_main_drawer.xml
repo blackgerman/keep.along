@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_todos"
+            android:icon="@drawable/ic_todos"
+            android:title="Todos" />
+        <item
+            android:id="@+id/nav_tobuy"
+            android:icon="@drawable/ic_tobuy"
+            android:title="ToBuy" />
+
+        <!--<item
+            android:id="@+id/nav_achievements"
+            android:icon="@drawable/ic_achievements"
+            android:title="Achievements" />-->
+
+    </group>
+
+    <item android:title="Other Features">
+        <menu>
+            <item
+                android:id="@+id/nav_alarms"
+                android:icon="@drawable/ic_alarms"
+                android:title="Alarms" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>
