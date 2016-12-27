@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity
     TextView tv_quotes_title;
     TextView tv_quote_autor;
 
-
     /* */
     private boolean activityIsRunning = false;
 
@@ -71,7 +70,6 @@ public class MainActivity extends AppCompatActivity
     /* Presenters */
     HomePresenter homePresenter;
     TaskPresenter taskPresenter;
-
 
     /* Repository files */
     private TaskListDataSource taskRepo;
