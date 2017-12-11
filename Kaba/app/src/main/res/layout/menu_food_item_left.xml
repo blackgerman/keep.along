@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menu_food_item_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/menu_food_item_spacing"
+    android:padding="@dimen/menu_food_item_spacing"
+    app:cardBackgroundColor="@color/colorPrimary_rm"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="@dimen/menu_food_pic_size"
+            android:layout_height="@dimen/menu_food_pic_size"
+            android:layout_margin="@dimen/menu_food_item_spacing"
+            android:src="@drawable/placeholder_kaba"
+            android:layout_alignParentLeft="true"
+            app:border_color="@color/circular_view_border_yellow"
+            app:border_width="@dimen/restaurant_rounded_image_border_width" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_pic"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text="@string/menu_food_item_name_sample"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/menu_food_item_name_font_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/menu_food_item_price_sample"
+                android:textColor="@color/circular_view_border_yellow"
+                android:textSize="@dimen/menu_food_item_price_font_size"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

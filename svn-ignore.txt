@@ -1,0 +1,9 @@
+/build
+/.gradle
+/gradle
+/*.iml
+/app/build
+/app/*.iml
+/savidor/build
+/savidor/*.iml
+

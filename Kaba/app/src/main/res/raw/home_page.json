@@ -1,0 +1,15 @@
+{
+  "error": 0,
+  "message" : "",
+  "data" :
+  {
+    "standard_search_message" : "",
+    "daily_restaurant" : [
+      {},
+      {},
+      {}
+    ], // max 6
+    "advert_banner" : [],
+    "sales": [] // pair but <= 6
+  }
+}

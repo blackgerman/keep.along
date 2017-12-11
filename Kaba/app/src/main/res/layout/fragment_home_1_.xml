@@ -1,0 +1,89 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tg.experta.kaba.Home.Fragmentz.Home_1_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 6 main restaurant list -->
+        <android.support.v7.widget.RecyclerView
+            android:paddingTop="@dimen/restaurant_icon_padding"
+            android:id="@+id/recyclerview_home_restaurant_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+
+        <!-- advertising mainview -->
+        <!-- 4 main restaurant list -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_home_4_adspace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/restaurant_icon_padding"
+            />
+
+        <!-- viewpager ... -->
+        <tg.experta.kaba._commons.cviews.SlidingBanner_Directionnal
+            android:id="@+id/sliding_banner"
+            android:layout_width="match_parent"
+            android:background="@color/brown"
+            android:layout_height="@dimen/sliding_banner_height"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center_vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_sliding_banner"
+                android:layout_width="match_parent"
+                android:background="@color/transparent"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:id="@+id/rel_nav_left"
+                android:background="@color/sliding_banner_left_pad_transparent_bg"
+                android:layout_width="@dimen/sliding_banner_pad_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="left">
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_sliding_banner_left_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rel_nav_right"
+                android:background="@color/sliding_banner_left_pad_transparent_bg"
+                android:layout_width="@dimen/sliding_banner_pad_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="right">
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_sliding_banner_right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </tg.experta.kaba._commons.cviews.SlidingBanner_Directionnal>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/food_details_picture_height"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/food_details_picture_height"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
